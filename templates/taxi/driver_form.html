@@ -9,7 +9,7 @@
 
     <input type="submit" value="Submit" class="btn btn-primary">
     {% if object %}
-      <a class="btn btn-danger" href="{% url 'taxi:driver-detail' pk=driver.id %}">Cancel</a>
+      <a class="btn btn-danger" href="{% url 'taxi:driver-detail' pk=object.id %}">Cancel</a>
     {% else %}
       <a class="btn btn-danger" href="{% url 'taxi:driver-list' %}">Cancel</a>
     {% endif %}
